@@ -71,8 +71,8 @@ public class MovementDriver extends Driver {
         location.y+=distanceMoved*Math.cos(location.rotation);
         location.rotation+=rotspeed*dpms;
     }
-    public void setSpeed(float s){
-        calculatePosition();
+    public void setRotspeed(float s){
+        //calculatePosition();
         float r=(s-rotspeed)/2;
         float l=(rotspeed+s)/2;
         fl.setPower(l);
@@ -83,8 +83,8 @@ public class MovementDriver extends Driver {
         }
         speed=s;
     }
-    public void setRotspeed(float s){
-        calculatePosition();
+    public void setSpeed(float s){
+        //calculatePosition();
         float r=(speed-s)/2;
         float l=(speed+s)/2;
         fl.setPower(l);

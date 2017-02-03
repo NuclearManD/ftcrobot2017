@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\buric_000\\AndroidStudioProjects\\ftcrobot0\\FtcRobotController\\build\\intermediates\\res\\merged\\release\\values-v14\\values-v14.xml",
+        "outputFile": "C:\\Users\\dylanbrophy\\AndroidStudioProjects\\ftcrobot2017\\FtcRobotController\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -12,14 +12,14 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "C:\\Users\\buric_000\\AndroidStudioProjects\\ftcrobot0\\FtcRobotController\\src\\main\\res\\values-v14\\styles.xml",
+                    "file": "C:\\Users\\dylanbrophy\\AndroidStudioProjects\\ftcrobot2017\\FtcRobotController\\src\\main\\res\\values-v14\\styles.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 4,
-                        "startOffset": 1869,
+                        "startOffset": 1909,
                         "endLine": 42,
                         "endColumn": 12,
-                        "endOffset": 2015
+                        "endOffset": 2057
                     }
                 }
             }

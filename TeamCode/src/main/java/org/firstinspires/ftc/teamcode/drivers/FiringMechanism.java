@@ -7,31 +7,26 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 public class FiringMechanism extends Driver{
     DcMotor a;
-    DcMotor b;
     Servo q;
     double time;
     int state=0;
     boolean use_opt=true;
-    public FiringMechanism(DcMotor aa,DcMotor bb,Servo qq,boolean uo){
+    public FiringMechanism(DcMotor aa,Servo qq,boolean uo){
         a=aa;
-        b=bb;
         q=qq;
         use_opt=uo;
         if(!uo){
             a.setPower(1);
-            b.setPower(1);
         }
     }
-    public FiringMechanism(DcMotor aa,DcMotor bb,Servo qq){
+    public FiringMechanism(DcMotor aa,Servo qq){
         a=aa;
-        b=bb;
         q=qq;
         use_opt=true;
     }
     public void Fire(){
         if(use_opt) {
             a.setPower(1);
-            b.setPower(1);
         }
         time=System.currentTimeMillis();
         state=1;
@@ -47,7 +42,6 @@ public class FiringMechanism extends Driver{
             q.setDirection(Servo.Direction.REVERSE);
             state=0;
             a.setPower(0);
-            b.setPower(0);
         }
     }
 }

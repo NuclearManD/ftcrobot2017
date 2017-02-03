@@ -6,6 +6,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.Servo;
 /*
  MainOp 2017 Edition
 
@@ -17,13 +18,25 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 @TeleOp(name="Main Op", group="2017")
 public class MainOp extends LinearOpMode {
     private MovementDriver drive;
-    private FiringMechanism gun;
+    private DcMotor gun;
+    DcMotor lift;
+    DcMotor clct;
+    Servo rl;
+    Servo ll;
+    Servo rr;
+    Servo lr;
     public void runOpMode(){
         try {
             DcMotor[] tmp={hardwareMap.dcMotor.get("fl"),hardwareMap.dcMotor.get("fr")};
             drive=new MovementDriver();
             drive.init(tmp, false);
-            gun=new FiringMechanism(hardwareMap.dcMotor.get("gl"),hardwareMap.dcMotor.get("gr"),hardwareMap.servo.get("gun"));
+            gun=hardwareMap.dcMotor.get("g");
+            lift=hardwareMap.dcMotor.get("lift");
+            clct=hardwareMap.dcMotor.get("clct");
+            ll=hardwareMap.servo.get("ll");
+            rl=hardwareMap.servo.get("rl");
+            lr=hardwareMap.servo.get("lr");
+            rr=hardwareMap.servo.get("rr");
         }catch (Exception e){
             System.out.println("\n------    HARDWARE ERROR IN INIT!   ------\n");
             e.printStackTrace();
@@ -37,16 +50,24 @@ public class MainOp extends LinearOpMode {
             drive.setRotspeed(gamepad1.left_stick_x);
 
             drive.setSpeed(-gamepad1.right_stick_y);
-            if (gamepad2.dpad_down)
-                moveArm0(-1);
-            else if (gamepad2.dpad_up)
-                moveArm0(1);
-            else
-                moveArm0(0);
             //if(gamepad2.right_bumper)//open
                 //flapright.setPosition(0.7);
-            //if(gamepad2.right_trigger>0.2)//close
-              //  gun.Fire();
+            if(gamepad1.right_trigger>0.2) {//close
+                rl.setPosition(0);
+                ll.setPosition(0);
+            }else{
+                rl.setPosition(255);
+                ll.setPosition(255);
+            }
+            if(gamepad2.right_trigger>0.2) {//close
+                lift.setPower(1);
+                clct.setPower(1);
+            }else{
+                lift.setPower(0);
+                clct.setPower(0);
+            }
+            gun.setPower(gamepad2.left_stick_y);
+            //  gun.Fire();
             /*if(gamepad2.left_bumper)//open
                 flapleft.setPosition(0.25);
             if(gamepad2.left_trigger>0.2)//close

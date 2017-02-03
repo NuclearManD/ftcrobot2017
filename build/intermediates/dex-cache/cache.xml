@@ -1,3 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="04c14d365bd3978ddbcbc70cdad63b0e99bdd78d">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\instant-run-bootstrap_ffb00e0c467c0382fd705e40aa948e4dd6a91841.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\Hardware-release\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9db012cfd98b7c849c8185c54a102f63a5b25086">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-Hardware-release_34b83ac7ede76908f8f0b68cf5c8237833431102.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\RobotCore-release\jars\libs\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7d741e4cdaf16306dfa2d1e714e87e5ad72240c5">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\gson-2.7_cb4231e49a754a3341aa61b6d237272bb09469ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\Blocks-release\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d24a147aca65fab0c97a988037ff3cc92261ae4e">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-Blocks-release_46479bca5200bcf3fae9ac3970da40e0a7bda7cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\Analytics-release\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-Analytics-release_7cfc4dd1e56a4d0441b03aa756d01905b8e7ea45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\WirelessP2p-release\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-WirelessP2p-release_1972e77aa224a49208689d626d4d97ee0d718ffb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\ModernRobotics-release\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="01999c87afe3d10ffa06f3efa66f39e61e6aba0c">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-ModernRobotics-release_e095fac633e907bde2c22fabee614ded07f8c7db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f45068b8087f9d300d50288ad3b98fdae0430776">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\instant-run_2adf0ff29b71bdf103e56de34e765958ea09b177.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\FtcCommon-release\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7e898c09e12a1c4aef1dd34417768b3d0525dc96">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-FtcCommon-release_4f6b9a281257d617e97b1cdb3fd572f02b24e367.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\RobotCore-release\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2e77bc643410bac7bea78c5b94319e325bc9ee7f">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-RobotCore-release_ce2f913662d1342cadb7b751eabfb64c837a6147.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\RobotCore-release\jars\libs\Vuforia.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2124c766c7b89e4a47dcf25c2d55cdd295120b18">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\Vuforia_4b78b0eff2d1d737f3655e76b6828a83ac73be00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\RobotCore-release\jars\libs\d2xx.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="140cb1dd56947cbd731ed2fa06858717294a5407">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\d2xx_61a9f08b93fd1240a7135230943c4d10a6249977.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\RobotCore-release\jars\libs\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5e41ae6cbe26e4bc6f060e67663b64bd7f64c41e">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_188a9a598f3c87177a19bdfd59dd4d36b246068f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\exploded-aar\Inspection-release\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8f0b41e483bc6e826da0f38026d7be68abcd0758">
+        <dex dex="C:\Users\dylanbrophy\AndroidStudioProjects\ftcrobot2017\TeamCode\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-Inspection-release_1e91fba3c9e669f06a5ea0d8f97b31b57ccdd6c5.jar" />
+    </item>
+
+</items>
