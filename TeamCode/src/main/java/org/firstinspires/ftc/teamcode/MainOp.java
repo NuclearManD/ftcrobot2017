@@ -37,6 +37,10 @@ public class MainOp extends LinearOpMode {
             rl=hardwareMap.servo.get("rl");
             lr=hardwareMap.servo.get("lr");
             rr=hardwareMap.servo.get("rr");
+            rl.setPosition(0.5);
+            ll.setPosition(0.5);
+            rr.setPosition(0);
+            lr.setPosition(1);
         }catch (Exception e){
             System.out.println("\n------    HARDWARE ERROR IN INIT!   ------\n");
             e.printStackTrace();
@@ -52,12 +56,16 @@ public class MainOp extends LinearOpMode {
             drive.setSpeed(-gamepad1.right_stick_y);
             //if(gamepad2.right_bumper)//open
                 //flapright.setPosition(0.7);
+            if(gamepad1.left_trigger>0.2) {//close
+                rr.setPosition(255);
+                lr.setPosition(0);
+            }
             if(gamepad1.right_trigger>0.2) {//close
-                rl.setPosition(0);
+                rl.setPosition(1);
                 ll.setPosition(0);
             }else{
-                rl.setPosition(255);
-                ll.setPosition(255);
+                rl.setPosition(0.5);
+                ll.setPosition(0.5);
             }
             if(gamepad2.right_trigger>0.2) {//close
                 lift.setPower(1);
