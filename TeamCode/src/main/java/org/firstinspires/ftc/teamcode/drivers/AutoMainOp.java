@@ -37,8 +37,8 @@ public class AutoMainOp extends LinearOpMode {
             rl=hardwareMap.servo.get("rl");
             lr=hardwareMap.servo.get("lr");
             rr=hardwareMap.servo.get("rr");
-            rl.setPosition(0.5);
-            ll.setPosition(0.5);
+            rl.setPosition(0);
+            ll.setPosition(0);
             rr.setPosition(0);
             lr.setPosition(1);
         }catch (Exception e){
@@ -49,26 +49,31 @@ public class AutoMainOp extends LinearOpMode {
             waitForStart();
         }catch (Exception e) {
             e.printStackTrace();
+
         }
-           sleep(2000);
-            //drive.setSpeed(FORWARD_SPEED);
-            runtime.reset();
-            while (opModeIsActive() && (runtime.seconds() < 1.6)) {
-                telemetry.addData("Path", "Leg 1: %2.5f S Elapsed", runtime.seconds());
-                telemetry.update();
+        rl.setPosition(0);
+        ll.setPosition(1);
+       sleep(2000);
+        drive.setSpeed(FORWARD_SPEED);
+        runtime.reset();
+        while (opModeIsActive() && (runtime.seconds() < 1.8)) {
+            telemetry.addData("Path", "Leg 1: %2.5f S Elapsed", runtime.seconds());
+            telemetry.update();
 
-            }
-            drive.setSpeed(0);
+        }
+        drive.setSpeed(0);
 
-            while (opModeIsActive() && (runtime.seconds() < 8.0)) {
-                System.out.println("Firing mode");
-                gun.setPower(1);
-                sleep(400);
-                gun.setPower(0);
-                sleep(100);
-            }
+        while (opModeIsActive() && (runtime.seconds() < 8.0)) {
+            System.out.println("Firing mode");
+            gun.setPower(1);
+            sleep(400);
             gun.setPower(0);
-            //sleep(100);
+            sleep(100);
+        }
+        gun.setPower(0);
+        //sleep(100);
+
+
 
 
 

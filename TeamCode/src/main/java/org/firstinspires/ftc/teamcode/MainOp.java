@@ -37,8 +37,8 @@ public class MainOp extends LinearOpMode {
             rl=hardwareMap.servo.get("rl");
             lr=hardwareMap.servo.get("lr");
             rr=hardwareMap.servo.get("rr");
-            rl.setPosition(0.5);
-            ll.setPosition(0.5);
+            rl.setPosition(0);
+            ll.setPosition(1);
             rr.setPosition(0);
             lr.setPosition(1);
         }catch (Exception e){
@@ -50,6 +50,8 @@ public class MainOp extends LinearOpMode {
         }catch (Exception e) {
             e.printStackTrace();
         }
+        rl.setPosition(0);
+        ll.setPosition(1);
         while (opModeIsActive()) {
             drive.setRotspeed(gamepad1.left_stick_x);
 
