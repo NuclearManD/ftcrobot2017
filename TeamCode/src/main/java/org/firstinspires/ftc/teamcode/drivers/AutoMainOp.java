@@ -60,12 +60,12 @@ public class AutoMainOp extends LinearOpMode {
             }
             drive.setSpeed(0);
 
-            while (opModeIsActive() && (runtime.seconds() < 10.0)) {
+            while (opModeIsActive() && (runtime.seconds() < 6.0)) {
                 System.out.println("Firing mode");
-                gun.setPower(.6);
-                sleep(300);
+                gun.setPower(1);
+                sleep(100);
                 gun.setPower(0);
-                sleep(300);
+                sleep(100);
 
             }
 
