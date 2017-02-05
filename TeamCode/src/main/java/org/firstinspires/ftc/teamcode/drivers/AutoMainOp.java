@@ -56,7 +56,7 @@ public class AutoMainOp extends LinearOpMode {
        sleep(2000);
         drive.setSpeed(FORWARD_SPEED);
         runtime.reset();
-        while (opModeIsActive() && (runtime.seconds() < 1.8)) {
+        while (opModeIsActive() && (runtime.seconds() < 2)) {
             telemetry.addData("Path", "Leg 1: %2.5f S Elapsed", runtime.seconds());
             telemetry.update();
 
