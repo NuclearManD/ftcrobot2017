@@ -59,56 +59,19 @@ public class AutoMainOp extends LinearOpMode {
 
             }
             drive.setSpeed(0);
-            gun.setPower(1);
-            while (opModeIsActive() && (runtime.seconds() < 10.0)) {
+
+            while (opModeIsActive() && (runtime.seconds() < 8.0)) {
                 System.out.println("Firing mode");
+                gun.setPower(1);
+                sleep(400);
+                gun.setPower(0);
+                sleep(100);
             }
             gun.setPower(0);
             //sleep(100);
 
 
-        //gun.setPower(0);
-           /* drive.setRotspeed(gamepad1.left_stick_x);
 
-            drive.setSpeed(-gamepad1.right_stick_y);
-            //if(gamepad2.right_bumper)//open
-                //flapright.setPosition(0.7);
-            if(gamepad1.left_trigger>0.2) {//close
-                rr.setPosition(255);
-                lr.setPosition(0);
-            }
-            if(gamepad1.right_trigger>0.2) {//close
-                rl.setPosition(1);
-                ll.setPosition(0);
-            }else{
-                rl.setPosition(0.5);
-                ll.setPosition(0.5);
-            }
-            if(gamepad2.right_trigger>0.2) {//close
-                lift.setPower(1);
-                clct.setPower(1);
-            }else{
-                lift.setPower(0);
-                clct.setPower(0);
-            }
-            gun.setPower(gamepad2.left_stick_y);*/
-            //  gun.Fire();
-            /*if(gamepad2.left_bumper)//open
-                flapleft.setPosition(0.25);
-            if(gamepad2.left_trigger>0.2)//close
-                flapleft.setPosition(0.82);
-            if (gamepad2.b)
-                armup.setPower(0.5);
-            else if (gamepad2.y)
-                armup.setPower(-0.5);
-            else
-                armup.setPower(0);
-            if(gamepad2.x)
-                dropper.setPosition(0.99f);
-            if(gamepad1.dpad_down)
-                drive.sluff();
-            if(gamepad1.dpad_up)
-                drive.nosluff();*/
 
     }
     void moveArm0(float value){
