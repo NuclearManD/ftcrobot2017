@@ -57,8 +57,11 @@ public class MainOp extends LinearOpMode {
             //if(gamepad2.right_bumper)//open
                 //flapright.setPosition(0.7);
             if(gamepad1.left_trigger>0.2) {//close
-                rr.setPosition(255);
+                rr.setPosition(1);
                 lr.setPosition(0);
+            }else{
+                rr.setPosition(0);
+                lr.setPosition(1);
             }
             if(gamepad1.right_trigger>0.2) {//close
                 rl.setPosition(1);
@@ -74,7 +77,7 @@ public class MainOp extends LinearOpMode {
                 lift.setPower(0);
                 clct.setPower(0);
             }
-            gun.setPower(gamepad2.left_stick_y);
+            gun.setPower(Math.abs(gamepad2.left_stick_y)-Math.abs(gamepad2.right_stick_y));
             //  gun.Fire();
             /*if(gamepad2.left_bumper)//open
                 flapleft.setPosition(0.25);
