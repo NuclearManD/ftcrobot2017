@@ -59,17 +59,15 @@ public class AutoMainOp extends LinearOpMode {
 
             }
             drive.setSpeed(0);
-
-            while (opModeIsActive() && (runtime.seconds() < 6.0)) {
+            gun.setPower(1);
+            while (opModeIsActive() && (runtime.seconds() < 10.0)) {
                 System.out.println("Firing mode");
-                gun.setPower(1);
-                sleep(100);
-                gun.setPower(0);
-                sleep(100);
-
             }
+            gun.setPower(0);
+            //sleep(100);
 
-            //gun.setPower(0);
+
+        //gun.setPower(0);
            /* drive.setRotspeed(gamepad1.left_stick_x);
 
             drive.setSpeed(-gamepad1.right_stick_y);
