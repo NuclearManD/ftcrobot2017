@@ -38,7 +38,7 @@ public class AutoMainOp extends LinearOpMode {
             lr=hardwareMap.servo.get("lr");
             rr=hardwareMap.servo.get("rr");
             rl.setPosition(0);
-            ll.setPosition(0);
+            ll.setPosition(1);
             rr.setPosition(0);
             lr.setPosition(1);
         }catch (Exception e){
@@ -51,7 +51,7 @@ public class AutoMainOp extends LinearOpMode {
             e.printStackTrace();
 
         }
-        rl.setPosition(0);
+        rl.setPosition(0.5);
         ll.setPosition(1);
        sleep(2000);
         drive.setSpeed(FORWARD_SPEED);
